@@ -7,4 +7,6 @@ Particle Swarm Optimization (PSO) is a popular metaheuristic inspired by collect
 
 This work proposes a Mamdani fuzzy controller, which expresses the adjustment as if-then rules, as an add-on that sets ω and the cognitive coefficient (c₁) at each iteration based on two indicators of the swarm state: a stagnation counter and dimension-wise diversity. We attached it to three PSO variants with different learning mechanisms (BLPSO, CLPSO, and PSOGSA) and compared each with its original version on 40 benchmark functions in 30 and 50 dimensions, using the Wilcoxon rank-sum test over 30 runs.
 
+<img width="3200" height="990" alt="fuzzyflow" src="https://github.com/user-attachments/assets/1830dd3c-899c-44c2-bda8-7f78d0ab34ea" />
+
 
