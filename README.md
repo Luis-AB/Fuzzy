@@ -3,9 +3,7 @@ Enhancing Particle Swarm Optimization via a Fuzzy Logic Add-On: A Comparative St
 
 ## Abstract
 
-Particle Swarm Optimization (PSO) is a popular metaheuristic inspired by collective behavior, where individuals learn from their own experience and the success of others. Its performance depends on the inertia weight (ω) and the acceleration coefficients, which most variants fix or schedule in advance.
-
-This work proposes a Mamdani fuzzy controller, which expresses the adjustment as if-then rules, as an add-on that sets ω and the cognitive coefficient (c₁) at each iteration based on two indicators of the swarm state: a stagnation counter and dimension-wise diversity. We attached it to three PSO variants with different learning mechanisms (BLPSO, CLPSO, and PSOGSA) and compared each with its original version on 40 benchmark functions in 30 and 50 dimensions, using the Wilcoxon rank-sum test over 30 runs.
+In Particle Swarm Optimization (PSO), the inertia weight (ω) determines the extent to which a particle's previous velocity is carried over to the subsequent iteration. At the same time, the cognitive coefficient (c1) scales the cognitive component of the velocity update. Most PSO variants assign these parameters fixed values or vary them according to a predefined schedule. This study presents a Mamdani fuzzy controller that adjusts both parameters in response to the current state of the swarm. At each iteration, the controller utilizes a set of if–then rules to determine ω and c1 from two inputs: a stagnation counter and a measure of swarm diversity computed across individual dimensions. We integrated the controller into BLPSO, CLPSO, and PSOGSA to evaluate its use across three distinct learning mechanisms. For each algorithm, we compared the fuzzy variant with its original implementation on 40 benchmark functions in both 30 and 50 dimensions. We assessed differences between each pair using the Wilcoxon rank-sum test on results from 30 runs per configuration.
 
 <img width="3200" height="990" alt="fuzzyflow" src="https://github.com/user-attachments/assets/1830dd3c-899c-44c2-bda8-7f78d0ab34ea" />
 
